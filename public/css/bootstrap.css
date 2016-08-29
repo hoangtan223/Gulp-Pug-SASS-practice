@@ -12,6 +12,10 @@ html {
 body {
   margin: 0;
 }
+
+form .error {
+  color: #ff0000;
+}
 article,
 aside,
 details,

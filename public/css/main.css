@@ -32,3 +32,7 @@ ul {
     margin: 5px;
     padding: 5px 20px;
     border: 1px solid #d54444; }
+    
+form .error {
+  color: #ff0000;
+}

@@ -6,6 +6,7 @@ html
         script(src="https://code.jquery.com/jquery-2.2.0.min.js")
         script(src="js/bootstrap.js")
         script(src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js")
+        script(src="js/validation.js")
     body
     .row
     .col-lg-12
@@ -15,7 +16,7 @@ html
         form(role="form", name="validate-form")
             .form-group
                 label Name
-                input.form-control(type="text", required)
+                input.form-control(type="text",name="name",required)
             .form-group
                 label Phone Number
                 input.form-control(type="text")
