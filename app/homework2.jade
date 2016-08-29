@@ -1,0 +1,68 @@
+doctype html
+html
+    head 
+        title Form
+        link(rel="stylesheet", href='css/bootstrap.css')
+        script(src="https://code.jquery.com/jquery-2.2.0.min.js")
+        script(src="js/bootstrap.js")
+        script(src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js")
+    body
+    .row
+    .col-lg-12
+        h1.page-header Form
+    .row
+    .container
+        form(role="form", name="validate-form")
+            .form-group
+                label Name
+                input.form-control(type="text", required)
+            .form-group
+                label Phone Number
+                input.form-control(type="text")
+            .form-group
+                label Password
+                input.form-control(type="password")
+            .form-group
+                label Confirm Password
+                input.form-control(type="password")
+            .form-group
+                label Date of birth
+                input.form-control(type="text")
+            .form-group
+                label Website
+                input.form-control(type="text")
+            .form-group
+                label Gender
+                label.radio-inline
+                input#optionsMale(type="radio", name="optionsRadiosInline", value="Male", checked="")
+                |  Male
+                label.radio-inline
+                input#optionsFemale(type="radio", name="optionsRadiosInline", value="Female")
+                |  Female
+            .form-group
+                label Language
+                .checkbox
+                label
+                    input(type="checkbox",value=1)
+                    |  English
+                .checkbox
+                label
+                    input(type="checkbox",value=1)
+                    |  French
+                .checkbox
+                label
+                    input(type="checkbox",value=1)
+                    |  Vietnamese
+            .form-group
+                label Country
+                select.form-control
+                    option Vietnam
+                    option US
+            .form-group
+                label Notes
+                textarea.form-control(type="textarea")
+            .form-group
+                input(type="submit")
+                    
+
+
