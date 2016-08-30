@@ -3,8 +3,10 @@
   <head> 
     <title>Form</title>
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
     <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
     <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
     <script src="js/validation.js"></script>
   </head>
@@ -21,24 +23,28 @@
         <input type="text" name="name" required class="form-control">
       </div>
       <div class="form-group">
+        <label>Email</label>
+        <input type="text" name="email" class="form-control">
+      </div>
+      <div class="form-group">
         <label>Phone Number</label>
-        <input type="text" class="form-control">
+        <input type="text" name="phone" class="form-control">
       </div>
       <div class="form-group">
         <label>Password</label>
-        <input type="password" class="form-control">
+        <input type="password" name="password" id="password" class="form-control">
       </div>
       <div class="form-group">
         <label>Confirm Password</label>
-        <input type="password" class="form-control">
+        <input type="password" name="confirm_password" class="form-control">
       </div>
       <div class="form-group">
         <label>Date of birth</label>
-        <input type="text" class="form-control">
+        <input type="text" id="birthday-picker" name="birthday" class="form-control">
       </div>
       <div class="form-group">
         <label>Website</label>
-        <input type="text" class="form-control">
+        <input type="text" name="website" class="form-control">
       </div>
       <div class="form-group">
         <label>Gender</label>
@@ -78,4 +84,5 @@
       </div>
     </form>
   </div>
+  <script type="text/javascript">$('#birthday-picker').datepicker();</script>
 </html>

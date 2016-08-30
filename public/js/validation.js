@@ -11,6 +11,27 @@ $(function() {
       password: {
         required: true,
         minlength: 5
+      },
+      confirm_password: {
+        required: true,
+        minlength: 5,
+        equalTo: '#password'
+      },
+      phone:{
+        required: true,
+        digits: true
+      },
+      email: {
+        required: true,
+        email: true
+      },
+      website: {
+        required: true,
+        url: true
+      },
+      birthday: {
+        required: true,
+        date: true
       }
     },
     // Specify validation error messages

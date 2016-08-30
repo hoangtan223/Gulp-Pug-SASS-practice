@@ -3,8 +3,10 @@ html
     head 
         title Form
         link(rel="stylesheet", href='css/bootstrap.css')
+        link(rel="stylesheet", href='css/bootstrap-datepicker.css')
         script(src="https://code.jquery.com/jquery-2.2.0.min.js")
         script(src="js/bootstrap.js")
+        script(src="js/bootstrap-datepicker.js")
         script(src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js")
         script(src="js/validation.js")
     body
@@ -18,20 +20,23 @@ html
                 label Name
                 input.form-control(type="text",name="name",required)
             .form-group
+                label Email
+                input.form-control(type="text", name="email")
+            .form-group
                 label Phone Number
-                input.form-control(type="text")
+                input.form-control(type="text", name="phone")
             .form-group
                 label Password
-                input.form-control(type="password")
+                input.form-control(type="password", name="password", id="password") 
             .form-group
                 label Confirm Password
-                input.form-control(type="password")
+                input.form-control(type="password", name="confirm_password")
             .form-group
                 label Date of birth
-                input.form-control(type="text")
+                input.form-control(type="text", id="birthday-picker", name="birthday")
             .form-group
                 label Website
-                input.form-control(type="text")
+                input.form-control(type="text", name="website")
             .form-group
                 label Gender
                 label.radio-inline
@@ -64,6 +69,8 @@ html
                 textarea.form-control(type="textarea")
             .form-group
                 input(type="submit")
-                    
 
 
+
+    script(type='text/javascript').
+        $('#birthday-picker').datepicker();
